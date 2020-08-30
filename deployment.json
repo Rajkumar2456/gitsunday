@@ -1,0 +1,88 @@
+{
+  "id": "/subscriptions/11d70d0a-38bc-49d0-9031-30062a9d0e80/resourceGroups/monday-one/providers/Microsoft.Resources/deployments/Microsoft.VirtualNetworkGateway-20200824135824",
+  "name": "Microsoft.VirtualNetworkGateway-20200824135824",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/11d70d0a-38bc-49d0-9031-30062a9d0e80/resourceGroups/monday-one/providers/Microsoft.Network/virtualNetworkGateways/vng-vpn",
+    "marketplaceItemId": "Microsoft.VirtualNetworkGateway"
+  },
+  "properties": {
+    "templateHash": "16300776720559861147",
+    "parameters": {
+      "name": {
+        "type": "String",
+        "value": "vng-vpn"
+      },
+      "location": {
+        "type": "String",
+        "value": "centralus"
+      },
+      "sku": {
+        "type": "String",
+        "value": "VpnGw1"
+      },
+      "gatewayType": {
+        "type": "String",
+        "value": "Vpn"
+      },
+      "vpnGatewayGeneration": {
+        "type": "String",
+        "value": "Generation1"
+      },
+      "vpnType": {
+        "type": "String",
+        "value": "RouteBased"
+      },
+      "subnetId": {
+        "type": "String",
+        "value": "/subscriptions/11d70d0a-38bc-49d0-9031-30062a9d0e80/resourceGroups/monday-one/providers/Microsoft.Network/virtualNetworks/vnet2-vpn2/subnets/GatewaySubnet"
+      },
+      "newPublicIpAddressName": {
+        "type": "String",
+        "value": "clinentip"
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Running",
+    "timestamp": "2020-08-24T08:34:24.7463142Z",
+    "duration": "PT4M20.5115591S",
+    "correlationId": "0f8c7d34-38ad-492f-865c-f137c595372a",
+    "providers": [
+      {
+        "namespace": "Microsoft.Network",
+        "resourceTypes": [
+          {
+            "resourceType": "virtualNetworkGateways",
+            "locations": [
+              "centralus"
+            ]
+          },
+          {
+            "resourceType": "publicIPAddresses",
+            "locations": [
+              "centralus"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/11d70d0a-38bc-49d0-9031-30062a9d0e80/resourceGroups/monday-one/providers/Microsoft.Network/publicIPAddresses/clinentip",
+            "resourceType": "Microsoft.Network/publicIPAddresses",
+            "resourceName": "clinentip"
+          }
+        ],
+        "id": "/subscriptions/11d70d0a-38bc-49d0-9031-30062a9d0e80/resourceGroups/monday-one/providers/Microsoft.Network/virtualNetworkGateways/vng-vpn",
+        "resourceType": "Microsoft.Network/virtualNetworkGateways",
+        "resourceName": "vng-vpn"
+      }
+    ],
+    "validationLevel": "Template"
+  }
+}

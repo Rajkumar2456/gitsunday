@@ -1,0 +1,36 @@
+[
+  {
+    "id": "/subscriptions/11d70d0a-38bc-49d0-9031-30062a9d0e80/resourceGroups/monday-one/providers/Microsoft.Resources/deployments/Microsoft.VirtualNetworkGateway-20200824135824/operations/2D45C2B985B8982D",
+    "operationId": "2D45C2B985B8982D",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Running",
+      "timestamp": "2020-08-24T08:34:24.8875623Z",
+      "duration": "PT4M7.2609413S",
+      "trackingId": "ccae010f-1deb-46eb-92a4-3ec24b0f12ad",
+      "statusCode": "Created",
+      "targetResource": {
+        "id": "/subscriptions/11d70d0a-38bc-49d0-9031-30062a9d0e80/resourceGroups/monday-one/providers/Microsoft.Network/virtualNetworkGateways/vng-vpn",
+        "resourceType": "Microsoft.Network/virtualNetworkGateways",
+        "resourceName": "vng-vpn"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/11d70d0a-38bc-49d0-9031-30062a9d0e80/resourceGroups/monday-one/providers/Microsoft.Resources/deployments/Microsoft.VirtualNetworkGateway-20200824135824/operations/441956C6F15AFFCB",
+    "operationId": "441956C6F15AFFCB",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2020-08-24T08:30:17.5603166Z",
+      "duration": "PT8.850927S",
+      "trackingId": "c4b4ce6a-0a8c-4261-94a2-9df0dc28fa99",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/11d70d0a-38bc-49d0-9031-30062a9d0e80/resourceGroups/monday-one/providers/Microsoft.Network/publicIPAddresses/clinentip",
+        "resourceType": "Microsoft.Network/publicIPAddresses",
+        "resourceName": "clinentip"
+      }
+    }
+  }
+]
